@@ -6,13 +6,14 @@
 </head>
 <body>
 <script>
-    let n = parseInt(prompt('do dai chuoi'))
+    let n = parseInt(prompt('Độ dài chuỗi'))
     let array=[]
     for (let i = 0; i < n; i++) {
-        let a =parseInt(prompt('nhap cac phan tu'))
+        let a =parseInt(prompt('Nhập các phần tử'))
         array.push(a)
+        if(a<0) console.log(a)
     }
-    console.log(array)
+
 
 </script>
 </body>

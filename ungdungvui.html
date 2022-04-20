@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Type anthing slowly</h1>
+<textarea id="tunhap" oninput="key()"  ></textarea>
+<script>
+  let a = 'Ban muon danh nhau khong'
+  let str = a.toString()
+  let mang = []
+  let b = -1
+  function key() {
+    b++
+    mang.push(str[b])
+    document.getElementById('tunhap').value=mang.join('')
+  }
+
+</script>
+</body>
+</html>
