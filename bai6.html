@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= prompt("Nhập chuỗi a")
+    let str=[]
+    for (let i = 0; i < a.length; i++) {
+        let b=parseInt(a[i])
+        str.push(b)
+    }
+    let v=parseInt(prompt("Nhập số v"))
+    let check=true
+    for (let i = 0; i < str.length; i++) {
+        if (v===str[i]) {
+            document.write("V is in the array" );
+            check=false
+        }
+
+    }
+    if (check) document.write("V is not in the array")
+</script>
+</body>
+</html>

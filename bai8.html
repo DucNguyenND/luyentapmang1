@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt("nhập chuỗi ")
+    let array=[]
+    for (let i = 0; i < a.length; i++) {
+        array.push(a[i])
+    }
+    array.sort(function (b,c) {
+        return b-c;
+        
+    })
+    console.log(array)
+</script>
+</body>
+</html>

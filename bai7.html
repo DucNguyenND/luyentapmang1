@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt("nhập chuỗi ")
+    let array=[]
+    let array1=[]
+    for (let i = 0; i < a.length; i++) {
+        array.push(a[i])
+    }
+    let v=prompt("Nhập v")
+    let d=""
+    for (let m = 0; m <array.length ; m++) {
+        if (v==array[m])
+            array.splice(m,1)
+    }
+    array.push(0)
+    console.log(array)
+</script>
+</body>
+</html>
